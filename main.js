@@ -5,16 +5,3 @@ window.addEventListener ("load", function(){
 });
 
 
-(function(){
-
-	$(function(){
-
-		
-		$('#btn-ventana').on('click', function(){
-			$('#ventana-modal').modal();
-		});
-
-	});
-
-
-}());

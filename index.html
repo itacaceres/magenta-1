@@ -40,7 +40,7 @@
 	</div>
 
 
-	<header style="background-image: url(img/portada.jpg)">
+	<header style="background-image: url(img/portada1.jpg)">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			
 			
@@ -63,7 +63,7 @@
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="servicios.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SERVICIOS</a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" id="dropdown-hover" href="diseñoweb.html">Diseño Web</a>
+          <a class="dropdown-item" id="dropdown-hover" href="diseñoweb.html">Desarrollo Web</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" id="dropdown-hover" href="diseñografico.html">Diseño Gráfico</a>
           <div class="dropdown-divider"></div>
@@ -80,53 +80,46 @@
       <button class="btn btn-outline-success my-2 my-sm-0" id="boton" type="submit">Buscar</button>
     </form>
   </div>
-
-
-
-
-	
-			<div class="modal" tabindex="-1" role="dialog" id="ventana-modal">
-			  <div class="modal-dialog" role="document">
-			    <div class="modal-content">
-			      <div class="modal-header">
-			        <h5 class="modal-title">¿Quieres suscribirte?</h5>
-			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-			          <span aria-hidden="true">&times;</span>
-			        </button>
-			      </div>
-			      <div class="modal-body">
-			        <p>Lorem ipsum dolor sit amet.</p>
-			      </div>
-			      <div class="modal-footer">
-			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-			        <button type="button" class="btn btn-primary">Sí</button>
-			      </div>
-			    </div>
-			  </div>
-			</div>
-
-
+		
   
 </nav>
-
-			
-
 
 		<section class="textos-paraheader">
 
 			<h2>Porque todo es posible</h2>
 			<h3>con un poco de imaginación</h3>
 			
-		<button type="button" class="btn btn-primary" class="button" id="btn-ventana">Suscribirte</button>
+		<button class="btn btn-success" id="boton" data-toggle="modal" data-target="#ventanaModal">Suscribirte</button>
+
+
+		 <div class="modal" id="ventanaModal" tabindex="-1"  role="dialog" aria-labelledby="tituloVentana" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 id="tituloVentana" class="modal-title">¿Quiéres suscribirte?</h5>
+		        <button class="close" data-dismiss="modal" aria-label="Cerrar">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body" id="cuerpomodal">
+		      	<div class="alert alert-success" id="cuerpomodal">
+		        <p>Prometemos que no habrá spam, solamente cosas interesantes :) </p>
+		      </div>
+		  	</div>
+		      <div class="modal-footer">
+		        <button type="button" id="boton" class="btn btn-warning" data-dismiss="modal">¡Sí!</button>
+		        <button type="button" id="boton" class="btn btn-success"data-dismiss="modal">Cerrar</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
 
 		</section>
 
 
 	
-
-
 		<div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: white;"></path></svg></div>
-
 
 
 
@@ -147,46 +140,48 @@
 	<main>
 		
 		<section class="contenedor quienes-somos">
-			<h2 class="titulo"> ¿Quiénes somos? </h2>
+			
 			<div class="contenedor-quienes-somos">
 				
-				<img id="imagen-quienes-somos" class="hover-crece" src="img/creative_process.svg" alt="proceso-creativo">
+				<img id="imagen-quienes-somos" class="hover-crece" src="img/team_work.svg" alt="proceso-creativo">
 
 				<div class="contenido-textos">
 					
 					
-					<p><strong>Somos MAGENTA.</strong> Una productora digital jóven que nace del esfuerzo y arduo trabajo de sus dos miembros. Se buscarán de manera ingeniosas y creativas, soluciones, a los requerimientos de cada cliente para ofrecer servicios integros y de calidad.
-					Lorem ipsum, <strong> dolor sit amet consectetur adipisicing elit. </strong> Sapiente error doloremque laborum ab temporibus, repudiandae, facere incidunt minus omnis cumque eos nemo repellendus consequatur dicta, saepe, hic minima autem reiciendis. 
-					Donec finibus consequat nibh, lobortis placerat magna rutrum vitae. Proin ultrices ut eros id varius. Vestibulum felis purus, facilisis sed arcu nec, efficitur posuere lorem. </p>
+					<p><strong>Somos MAGENTA.</strong> Una productora digital jóven que nace del esfuerzo y arduo trabajo de sus dos miembros. Ante los desafíos, se buscarán soluciones de manera ingeniosa y creativa, para satisfacer los requerimientos de cada cliente. Se ofrecen servicios integros y de calidad, pero por sobre todo, hechos con amor ♡.
+					<br>
+					<strong>MAGENTA es #diseño, #desarrollo, #creatividad, #profesionalismo, #innovación. </strong>
+					Crear contenido es nuestra pasión.</p>
 
 				</div>
 
 			</div>
 		
+		
 
 		<h2 class="titulo">Galería</h2>
-		<div class="galeria">
-			
-			
-			
-				
+		
+		<div class="container">
+
+			<div class="row">
+			<div class="galeria">
 			
 			<div class="imagen" ><a href="img/-15.jpg" class="hover-crece"><img src="img/-15.jpg" alt="fotografia-modelo"></a></div>
 			<div class="imagen" ><a href="img/-9.jpg" class="hover-crece"><img src="img/-9.jpg" alt="fotografia-modelo"></a></div>
 			<div class="imagen" ><a href="img/-6.jpg" class="hover-crece"><img src="img/-6.jpg" alt="fotografia-modelo"></a></div>
 			<div class="imagen" ><a href="img/-17.jpg" class="hover-crece"><img src="img/-17.jpg" alt="fotografia-modelo"></a></div>
-			<div class="imagen" ><a href="img/-5.jpg" class="hover-crece"><img src="img/-5.jpg" alt="fotografia-modelo"></a></div>
+			<div class="imagen" ><a href="img/90.jpg" class="hover-crece"><img src="img/90.jpg" alt="fotografia-modelo"></a></div>
 			<div class="imagen" ><a href="img/-10.jpg" class="hover-crece"><img src="img/-10.jpg" alt="fotografia-modelo"></a></div>
 			
-			
+			</div>
 
-		</div>	
-		
+			</div>	
+			
+			</div>
+
+		</div>
 
 		</section>
-
-
-		
 
 
 		<section class="servicios">
@@ -201,7 +196,7 @@
 					<img src="img/1.jpg" alt="imagen-fotografia">
 
 					<div class="hover-galeria">
-						<img src="img/zoom-in (con gradiente rosa-celeste).svg" alt="icono-zoom">
+						<img src="img/lupa-con-zoom.svg" alt="icono-zoom">
 						<p>Conocer más</p>
 
 					</div>	
@@ -213,7 +208,7 @@
 					<img src="img/2.jpg" alt="imagen-video">
 
 					<div class="hover-galeria">
-						<img src="img/zoom-in (con gradiente rosa-celeste).svg" alt="icono-zoom">
+						<img src="img/lupa-con-zoom.svg" alt="icono-zoom">
 						<p>Conocer más</p>
 
 					</div>	
@@ -225,7 +220,7 @@
 					<img src="img/3.jpg" alt="imagen-coworking">
 
 					<div class="hover-galeria">
-						<img src="img/zoom-in (con gradiente rosa-celeste).svg" alt="icono-zoom">
+						<img src="img/lupa-con-zoom.svg" alt="icono-zoom">
 						<p>Conocer más</p>
 
 					</div>	
@@ -237,7 +232,7 @@
 					<img src="img/4.jpg" alt="imagen-diseño">
 
 					<div class="hover-galeria">
-						<img src="img/zoom-in (con gradiente rosa-celeste).svg" alt="icono-zoom">
+						<img src="img/lupa-con-zoom.svg" alt="icono-zoom">
 						<p>Conocer más</p>
 
 					</div>	
@@ -246,10 +241,10 @@
 
 						<div class="imagen-serv">
 					
-					<img src="img/5.jpg" alt="coworking">
+					<img src="img/46.jpg" alt="coworking">
 
 					<div class="hover-galeria">
-						<img src="img/zoom-in (con gradiente rosa-celeste).svg" alt="icono-zoom">
+						<img src="img/lupa-con-zoom.svg" alt="icono-zoom">
 						<p>Conocer más</p>
 
 					</div>	
@@ -258,10 +253,10 @@
 
 						<div class="imagen-serv">
 					
-					<img src="img/6.jpg" alt="diseñografico">
+					<img src="img/56.jpg" alt="diseñografico">
 
 					<div class="hover-galeria">
-						<img src="img/zoom-in (con gradiente rosa-celeste).svg" alt="icono-zoom">
+						<img src="img/lupa-con-zoom.svg" alt="icono-zoom">
 						<p>Conocer más</p>
 
 					</div>	
@@ -273,7 +268,7 @@
 					<img src="img/7.jpg" alt="coworking">
 
 					<div class="hover-galeria">
-						<img src="img/zoom-in (con gradiente rosa-celeste).svg" alt="icono-zoom">
+						<img src="img/lupa-con-zoom.svg" alt="icono-zoom">
 						<p>Conocer más</p>
 
 					</div>	
@@ -285,7 +280,7 @@
 					<img src="img/8.jpg" alt="coworking">
 
 					<div class="hover-galeria">
-						<img src="img/zoom-in (con gradiente rosa-celeste).svg" alt="icono-zoom">
+						<img src="img/lupa-con-zoom.svg" alt="icono-zoom">
 						<p>Conocer más</p>
 
 					</div>	
@@ -303,44 +298,7 @@
 		</section>
 		
 		
-		<section>
 		
-			<div class="equipo contenedor">
-			
-			<h2 class="titulo">Equipo</h2>
-			<div class="cards">
-				
-				<div class="card">
-
-					<img src="img/woman.svg" alt="avatar">	
-					<div class="contenido-texto-card">
-						
-						<h4>Ita Cáceres</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing, elit. Optio, libero corporis quam inventore accusamus enim accusantium quae provident perspiciatis quasi.</p>
-
-					</div>				
-
-				</div>
-
-				<div class="card">
-
-					<img src="img/woman (1).svg" alt="avatar">	
-					<div class="contenido-texto-card">
-						
-						<h4>Maca Pérez</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing, elit. Optio, libero corporis quam inventore accusamus enim accusantium quae provident perspiciatis quasi.</p>
-
-					</div>				
-
-				</div>
-
-			</div>
-
-		</div>
-
-		</section>
-
-
 		<section class="about-services">
 			
 			<div class="contenedor">
@@ -350,25 +308,32 @@
 				
 				<div class="servicio-individual">
 
-					<a href="diseñoweb.html" class="hover-crece"><img class="hover-crece" src="img/web_development_.svg" alt="diseñoweb"></a>
-					<h3>Diseño web</h3>
-					<p> Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Nobis, necessitatibus! </p>				
+					<a href="diseñoweb.html" class="hover-crece"><img class="hover-crece" src="img/coding_ (2).svg" alt="diseñoweb"></a>
+					<h3>Desarrollo web</h3>
+					<p> Brindamos servicios de diseño y desarrollo Web con las últimas tendencias. Realizamos un diseño profesional, de alto impacto, atractivo y pregnante.</p>
+
+					<a href="contacto.html"><button type="button" class="btn btn-primary" class="button" id="btn-ventana">¡Contanos!</button></a>
+				
 
 				</div>
 
 				<div class="servicio-individual">
 
-					<a href="diseñografico.html" class="hover-crece"><img class="hover-crece" src="img/_digital_content.svg" alt="diseñografico"></a>
+					<a href="diseñografico.html" class="hover-crece"><img class="hover-crece" src="img/designer_ (1).svg" alt="diseñografico"></a>
 					<h3>Diseño gráfico</h3>
-					<p> Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Nobis, necessitatibus! </p>				
+					<p>Ofrecemos servicios de diseño gráfico para empresas, emprendimientos y marcas. También diseño de logotipos y manuales de marca integrales. ¡Llevamos tu proyecto al siguiente nivel!  </p>
+					
+					<a href="contacto.html"><button type="button" class="btn btn-primary" class="button" id="btn-ventana">¡Contanos!</button></a>				
 
 				</div>
 
 				<div class="servicio-individual">
 
-					<a href="ediciondevideo.html" class="hover-crece"><img src="img/ui_design_.svg" alt="ediciondevideo"></a>
+					<a href="ediciondevideo.html" class="hover-crece"><img src="img/share.svg" alt="ediciondevideo"></a>
 					<h3>Edición de video</h3>
-					<p> Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Nobis, necessitatibus! </p>				
+					<p> Nuestro servicio de edición de video es profesional, rápido y ajustado a los requerimientos de cada cliente. Agregamos nuestro toque de creatividad para lograr productos originales. </p>
+					
+					<a href="contacto.html"><button type="button" class="btn btn-primary" class="button" id="btn-ventana">¡Contanos!</button></a>				
 
 				</div>
 
